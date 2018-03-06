@@ -470,7 +470,7 @@ a{
 }
 
 .btn{
-  background-color: #2f5572;
+  /*background-color: $mainBlue;*/
   color:#fff;
   text-decoration:none;
   padding:.75rem 1.2rem;
@@ -496,9 +496,11 @@ a{
   overflow: hidden;
   padding-left: 18px;
   padding-right: 18px;
-  max-width: 1236px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+
+
 }
 
 .wrapper--medium {
@@ -549,6 +551,14 @@ a{
 .wrapper--b-margin {
       margin-bottom: 3.875rem
   }
+  }
+
+.wrapper--bg-White{
+    background-color: #ffffff;
+  }
+
+.wrapper--bg-LightGrey{
+    background-color: #f7f7f7;
   }
 
 .page-section{
@@ -858,83 +868,101 @@ a{
 Instead edit gulp/templates/sprite*/
 
 .icon{
-  background-image:url('../../assets/images/sprites/sprite-e79e95cc.svg');
+  background-image:url('../../assets/images/sprites/sprite-af9f3a6c.svg');
 }
 
 .no-svg .icon{
-  background-image:url('../../assets/images/sprites/sprite-e79e95cc.png');
+  background-image:url('../../assets/images/sprites/sprite-af9f3a6c.png');
 }
 
-.icon--clear-view-escapes{
-  width:144.4px;
-  height:61.53px;
-  background-position:0 0;
+.icon--checker{
+  width:68.67px;
+  height:68.67px;
+  background-position:17.93839384551896% 85.47045036352692%;
 }
 
 .icon--comment{
   width:66px;
   height:66px;
-  background-position:99.71014492753623% 0;
+  background-position:25.02089718584564% 85.3731343283582%;
+}
+
+.icon--cover{
+  width:1652.67px;
+  height:1992.67px;
+  background-position:99.98351920013185% 0;
 }
 
 .icon--facebook{
   width:23.23px;
   height:44.01px;
-  background-position:26.424310365536293% 45.92133741323979%;
+  background-position:29.841647461155304% 84.57999400081961%;
 }
 
 .icon--fire{
   width:58px;
   height:66px;
-  background-position:0 99.58035714285714%;
+  background-position:21.62913539060328% 85.3731343283582%;
 }
 
 .icon--globe{
   width:66px;
   height:66px;
-  background-position:28.019323671497585% 99.58035714285714%;
+  background-position:17.92504876010031% 88.30149253731344%;
 }
 
 .icon--instagram{
   width:44.01px;
   height:44.01px;
-  background-position:63.059522249879905% 49.25740726919919%;
+  background-position:30.6566897166705% 84.57999400081961%;
+}
+
+.icon--logo{
+  width:643.33px;
+  height:408.67px;
+  background-position:0 99.98351920013185%;
 }
 
 .icon--mail{
   width:66px;
   height:50px;
-  background-position:0 48.0703125%;
+  background-position:26.859849540261912% 84.79457856840322%;
 }
 
 .icon--rain{
   width:66px;
   height:66px;
-  background-position:99.71014492753623% 58.92857142857143%;
+  background-position:19.838395096127055% 85.3731343283582%;
 }
 
 .icon--star{
   width:66px;
   height:66px;
-  background-position:59.90338164251208% 99.58035714285714%;
+  background-position:19.764001114516578% 88.30149253731344%;
 }
 
 .icon--twitter{
   width:53.78px;
   height:44.06px;
-  background-position:94.15199343125627% 98.55159026429745%;
+  background-position:28.601418408206108% 84.58178069575062%;
+}
+
+.icon--vk{
+  width:2002px;
+  height:2002px;
+  background-position:0 0;
 }
 
 .icon--wifi{
   width:62px;
   height:66px;
-  background-position:68.43601895734596% 0;
+  background-position:23.267464514333426% 85.3731343283582%;
 }
 
 .icon--youtube{
   width:36.75px;
   height:44px;
-  background-position:37.76931216931217% 45.917910447761194%;
+  background-position:31.811511089615145% 84.57963667089142%;
 }
 
 .site-footer{
@@ -962,7 +990,6 @@ Instead edit gulp/templates/sprite*/
   }
 
 .site-header {
-  padding: 10px 0;
   position: absolute;
   width: 100%;
   z-index: 2;
@@ -977,12 +1004,10 @@ Instead edit gulp/templates/sprite*/
 @media (min-width:800px){
 
 .site-header {
-    position:fixed;
-    background-color: rgba(47,85,114, .3)
+    position: fixed
 }
-
-    .site-header--dark{
-      background-color: rgba(23,51,72,.85);
+    .site-header--dark {
+      background-color: rgba(23, 51, 72, .85);
     }
   }
 
@@ -992,6 +1017,40 @@ Instead edit gulp/templates/sprite*/
       float: right
   }
   }
+
+.site-header--logo {
+    width: 70%;
+    height:100%;
+    display: inline-block;
+  }
+
+.site-header--logo-img {
+    display: inline-block;
+  }
+
+.site-header--logo-img img{
+    position: absolute;
+    top: 0;
+    left: 40px;
+    height: 70px;
+    }
+
+.site-header--logo-info {
+    display: inline-block;
+    margin: 30px 150px;
+  }
+
+.site-header--logo-info .eng {
+      margin-right: 16px;
+      font-weight: bold;
+      font-family: 'Arial', serif;
+      font-size: 20px;
+    }
+
+.site-header--logo-info .rus {
+      font-family: Arial, serif;
+      font-size: 18px;
+    }
 
 .site-header__logo {
     position: absolute;
@@ -1005,8 +1064,8 @@ Instead edit gulp/templates/sprite*/
     transition: transform .3s ease-out, -webkit-transform .3s ease-out;
     -webkit-transform-origin: 50% 0%;
             transform-origin: 50% 0%;
-    background-color: #2f5572;
-    padding: 25px 36px;
+    /*background-color: $mainBlue;*/
+    padding: 0px 36px;
   }
 
 @media (min-width:800px){
@@ -1016,8 +1075,7 @@ Instead edit gulp/templates/sprite*/
       -webkit-transform: translateX(0);
               transform: translateX(0)
   }
-
-      .site-header--dark .site-header__logo{
+      .site-header--dark .site-header__logo {
         -webkit-transform: scale(.56);
                 transform: scale(.56);
       }
@@ -1037,7 +1095,7 @@ Instead edit gulp/templates/sprite*/
   }
 
 .site-header__menu-icon::before {
-      content:"";
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -1065,8 +1123,8 @@ Instead edit gulp/templates/sprite*/
               transform-origin: 0 50%;
     }
 
-.site-header__menu-icon::after{
-      content:"";
+.site-header__menu-icon::after {
+      content: "";
       position: absolute;
       bottom: 0;
       left: 0;
@@ -1088,21 +1146,21 @@ Instead edit gulp/templates/sprite*/
   }
   }
 
-.site-header__menu-icon--close-x::before{
-    -webkit-transform:rotate(45deg) scaleX(1.25);
-            transform:rotate(45deg) scaleX(1.25);
-  }
+.site-header__menu-icon--close-x::before {
+      -webkit-transform: rotate(45deg) scaleX(1.25);
+              transform: rotate(45deg) scaleX(1.25);
+    }
 
-.site-header__menu-icon--close-x .site-header__menu-icon__middle{
-    opacity:0;
-    -webkit-transform:scaleX(0);
-            transform:scaleX(0);
-  }
+.site-header__menu-icon--close-x .site-header__menu-icon__middle {
+      opacity: 0;
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+    }
 
-.site-header__menu-icon--close-x::after{
-    -webkit-transform:rotate(-45deg) scaleX(1.25) translateY(1px);
-            transform:rotate(-45deg) scaleX(1.25) translateY(1px);
-  }
+.site-header__menu-icon--close-x::after {
+      -webkit-transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+              transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+    }
 
 .site-header__menu-content {
     opacity: 0;
@@ -1119,6 +1177,7 @@ Instead edit gulp/templates/sprite*/
 @media (min-width:800px){
 
 .site-header__menu-content {
+      background-color: #ffffff;
       opacity: 1;
       z-index: 1;
       padding-top: 0;
@@ -1128,6 +1187,46 @@ Instead edit gulp/templates/sprite*/
   }
 
 .site-header__menu-content--is-visible {
+      opacity: 1;
+      z-index: 1;
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+
+.site-header__contacts-content {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    position: relative;
+    z-index: -10;
+    padding-top: 90px;
+    text-align: center;
+  }
+
+@media (min-width:800px){
+
+.site-header__contacts-content {
+      display: inline-block;
+      opacity: 1;
+      z-index: 1;
+      padding-top: 0;
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      background-color: #f7f7f7
+  }
+      .site-header__contacts-content span {
+        font-weight: bolder;
+        margin-right: 25px;
+      }
+      .site-header__contacts-content a {
+        color: #000;
+        font-size: 18px;
+      }
+  }
+
+.site-header__contacts-content--is-visible {
       opacity: 1;
       z-index: 1;
       -webkit-transform: scale(1);
@@ -1152,16 +1251,30 @@ padding-top: 10px;
   }
   }
 
-.primary-nav ul{
+@media (min-width:800px){
+
+.primary-nav--pull-left{
+      float:left
+  }
+  }
+
+.primary-nav--contacts{
   margin:0;
   padding:0;
 }
 
-.primary-nav ul::after{
+.primary-nav--contacts::after{
     content:"";
     clear:both;
     display: table;
   }
+
+.primary-nav ul{
+  /*list-style-image: url('../../assets/images/checker2.jpg');*/
+  margin:0;
+  padding:0;
+  list-style-type: none;
+}
 
 .primary-nav li{
     list-style: none;
@@ -1190,7 +1303,7 @@ padding-top: 10px;
   }
 
 .primary-nav a{
-    color:#fff;
+    color:#000;
     text-decoration: none;
     font-weight:300;
     display:block;

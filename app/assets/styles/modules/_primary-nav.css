@@ -8,10 +8,24 @@ padding-top: 10px;
       float:right;
     }
   }
-ul{
+
+  &--pull-left{
+    @mixin atMedium{
+      float:left;
+    }
+  }
+
+&--contacts{
   margin:0;
   padding:0;
   @mixin clearfix;
+}
+
+ul{
+  /*list-style-image: url('../../assets/images/checker2.jpg');*/
+  margin:0;
+  padding:0;
+  list-style-type: none;
 }
 
   li{
@@ -33,7 +47,7 @@ ul{
   }
 
   a{
-    color:#fff;
+    color:#000;
     text-decoration: none;
     font-weight:300;
     display:block;
