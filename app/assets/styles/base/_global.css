@@ -10,7 +10,11 @@ img{
 *{
   box-sizing: border-box;
 }
+li{
+  list-style: none;
+}
 
 a{
   color:$mainOrange;
+  text-decoration: none;
 }
