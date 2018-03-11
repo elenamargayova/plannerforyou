@@ -1,69 +1,87 @@
-.large-hero{
-  border-bottom: 10px solid $mainBlue;
-  position:relative;
+.large-hero {
+  overflow: hidden;
+  position: relative;
   padding-top: 125px;
-
-&__image{
-  display: block;
-}
-
-&__text-content{
-  padding-top:88px;
-  position:absolute;
-  /*top:50%;
-  transform:translateY(-50%);*/
-  right:0;
-  width:40%;
-  text-align: left;
-
-@mixin atMedium{
+  &__image {
+    display: block;
+  }
+  &__text-content {
+    padding-top: 88px;
     position: absolute;
-    top: 125px;
-    right: 0;
+    /*top:50%;
+  transform:translateY(-50%);*/
+    right: 25px;
     width: 40%;
     text-align: left;
-}
-
-}
-&__title{
-  font-weight:300;
-  color: #000;
-  margin:0;
-  font-size: 2.4rem;
-
-@mixin atSmall{
-  font-size:2.5rem;
-}
-
-}
-&__subtitle{
-  font-weight: 300;
-  color: $mainBlue;
-  font-size: 1.5rem;
-  margin:0;
-
-@mixin atSmall{
-  font-size: 2.9rem;
-}
-
-}
-&__description{
-  text-align: left;
-  color:#000;
-  font-size: 1.1rem;
-  font-weight: 100;
-  text-shadow:2px 2px 0 rgba(0,0,0,.1);
-  max-width:30rem;
-  margin-left:auto;
-  margin-right:auto;
-{
-  li{
-    margin-bottom: 20px;
+    @mixin atSmall {
+      position: absolute;
+      top: 75px;
+      right: 0;
+      width: 51%;
+      text-align: left;
+    }
+    @mixin atMedium {
+      position: absolute;
+      top: 75px;
+      right: 25px;
+      width: 51%;
+      text-align: left;
+    }
+    @mixin atLarge {
+      width: 40%;
+    }
+    p{
+      text-align: center;
+    }
   }
-}
-@mixin atSmall{
-  font-size: 1.5rem;
-}
-
-}
+  &__title {
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+    font-size: 2.4rem;
+    @mixin atMedium {
+      font-size: 1.7rem;
+    }
+    @mixin atSmall {
+      font-size: 1.7rem;
+    }
+  }
+  &__subtitle {
+    font-weight: 300;
+    color: $mainBlue;
+    font-size: 1.5rem;
+    margin: 0;
+    @mixin atSmall {
+      font-size: 2.9rem;
+    }
+  }
+  &__description {
+    text-align: left;
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    li {
+      padding: 30px 0px 15px 50px;
+      background-image: url(../../assets/images/checker12.png);
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 40px;
+      @mixin atMedium {
+        margin-top: 15px;
+        padding: 5px 0px 0px 65px;
+        background-size: 30px;
+      }
+    }
+    @mixin atMedium {
+      margin-left: 60px;
+      font-size: 2.5rem;
+    }
+    @mixin atSmall {
+      font-size: 1.2rem;
+    }
+  }
 }

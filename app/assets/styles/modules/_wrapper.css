@@ -8,8 +8,14 @@
   &--medium {
     max-width: 976px;
   }
-  &--narrow{
-    max-width:470px;
+  &--narrow {
+    max-width: 470px;
+  }
+  &--medium {
+    max-width: 60%;
+  }
+  &--large {
+    max-width: 85%;
   }
   &--no-padding-until-medium {
     padding-left: 0;
@@ -27,7 +33,6 @@
       padding-right: 18px;
     }
   }
-
   .wrapper {
     padding-left: 0;
     padding-right: 0;
@@ -38,13 +43,26 @@
       margin-bottom: 3.875rem;
     }
   }
-  &--bg-White{
+  &--bg-White {
     background-color: $mainWhite;
   }
-
-  &--bg-LightGrey{
+  &--bg-LightGrey {
     background-color: $LightGrey;
   }
+  &--bg-Grey {
+    background-color: #f7f7f7;
+    padding:15px 20px;
+    text-align: center;
+    p{
+      font-size:1.5rem;
+      line-height: 1.7;
+      width: 70%;
+      margin:0 auto;
+    }
+  }
 
-
+  &--bg-DarkGrey {
+    padding: 5px;
+    background-color: #969696;
+  }
 }

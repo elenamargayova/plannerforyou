@@ -92,6 +92,7 @@
 .flexbox &--equal-height-at-large{
   @mixin atLarge{
   display: flex;
+
   }
 &>div{
   float: none;

@@ -1,10 +1,17 @@
 .page-section{
-  padding: 1.2rem 0;
+  /*padding: 1.2rem 0;*/
 
 @mixin atMedium{
-  padding: 4.5rem 0;
+  /*padding: 4.5rem 0;*/
 }
-
+&__paragraph-center{
+  padding: 15px 0px;
+  text-align: center;
+  width:70%;
+  line-height: 1.4;
+  font-size: 1.725rem;
+  margin:0 auto;
+}
 &--no-b-padding-until-medium{
   padding-bottom: 0;
 
@@ -21,10 +28,6 @@
   }
 }
 
-  &--blue{
-    background-color: $mainBlue;
-    color:#FFF;
-  }
 
 &--testimonials{
   background-color: #e0e6ef;
