@@ -477,8 +477,15 @@ a{
 .large-hero {
   overflow: hidden;
   position: relative;
-  padding-top: 125px;
+  padding-top: 0px;
 }
+
+@media (min-width:800px){
+
+.large-hero {
+    padding-top: 125px
+}
+  }
 
 .large-hero__image {
     display: block;
@@ -492,6 +499,7 @@ a{
     right: 25px;
     width: 40%;
     text-align: left;
+
   }
 
 @media (min-width:530px){
@@ -502,6 +510,7 @@ a{
       right: 0;
       width: 51%;
       text-align: left
+
   }
   }
 
@@ -513,6 +522,7 @@ a{
       right: 25px;
       width: 51%;
       text-align: left
+
   }
   }
 
@@ -520,31 +530,101 @@ a{
 
 .large-hero__text-content {
       width: 40%
+
   }
   }
 
-.large-hero__text-content p{
+@media (min-width:1400px){
+
+.large-hero__text-content {
+      height: 100%;
+      padding: 190px 0px 0px 0px;
+      top: 0px;
+      width: 50%
+
+  }
+  }
+
+@media (min-width:1600px){
+
+.large-hero__text-content {
+      height: 100%;
+      padding: 220px 0px 0px 0px;
+      top: 0px;
+      width: 50%
+
+  }
+  }
+
+@media (min-width:1790px){
+
+.large-hero__text-content {
+      height: 100%;
+      padding: 220px 0px 0px 0px;
+      top: 0px;
+      width: 50%
+
+  }
+  }
+
+.large-hero__text-content p {
       text-align: center;
     }
+
+@media (min-width:1600px){
+  }
 
 .large-hero__title {
     font-weight: 400;
     color: #000;
     margin: 0;
-    font-size: 2.4rem;
-  }
+    font-size: 1.7rem;
 
-@media (min-width:800px){
-
-.large-hero__title {
-      font-size: 1.7rem
-  }
   }
 
 @media (min-width:530px){
 
 .large-hero__title {
       font-size: 1.7rem
+
+  }
+  }
+
+@media (min-width:800px){
+
+.large-hero__title {
+      font-size: 1.8rem
+
+  }
+  }
+
+@media (min-width:1400px){
+
+.large-hero__title {
+      font-size: 2.6rem;
+      font-weight: 300;
+      padding: 0px 0px 0px 50px
+
+  }
+  }
+
+@media (min-width:1600px){
+
+.large-hero__title {
+      font-size: 3.1rem;
+      font-weight: 300;
+      padding: 0px 0px 0px 50px
+
+  }
+  }
+
+@media (min-width:1790px){
+
+.large-hero__title {
+      font-size: 3.5rem;
+      font-weight: 300;
+      padding: 0px 0px 0px 50px
+
   }
   }
 
@@ -571,6 +651,54 @@ a{
     max-width: 30rem;
     margin-left: auto;
     margin-right: auto;
+
+  }
+
+@media (min-width:1400px){
+
+.large-hero__description {
+      margin: 85px auto;
+      padding: 0;
+      max-width: 100%
+
+  }
+  }
+
+@media (min-width:1600px){
+
+.large-hero__description {
+      margin: 100px auto;
+      padding: 0;
+      max-width: 100%
+
+  }
+  }
+
+@media (min-width:1790px){
+
+.large-hero__description {
+      margin: 100px auto;
+      padding: 0;
+      max-width: 100%
+
+  }
+  }
+
+@media (min-width:800px){
+
+.large-hero__description {
+      margin-left: 60px;
+      font-size: 2.5rem
+
+  }
+  }
+
+@media (min-width:530px){
+
+.large-hero__description {
+      font-size: 1.2rem
+
+  }
   }
 
 .large-hero__description li {
@@ -579,6 +707,7 @@ a{
       background-repeat: no-repeat;
       background-position: left center;
       background-size: 40px;
+
     }
 
 @media (min-width:800px){
@@ -587,47 +716,102 @@ a{
         margin-top: 15px;
         padding: 5px 0px 0px 65px;
         background-size: 30px
+
     }
   }
 
-@media (min-width:800px){
+@media (min-width:1400px){
 
-.large-hero__description {
-      margin-left: 60px;
-      font-size: 2.5rem
-  }
-  }
+.large-hero__description li {
+        padding: 5px 0px 0px 65px;
+        margin: 40px 95px 0px;
+        font-weight: 400;
+        line-height: 1.5;
+        font-size: 1.4rem
 
-@media (min-width:530px){
-
-.large-hero__description {
-      font-size: 1.2rem
-  }
+    }
   }
 
-.btn{
+@media (min-width:1600px){
+
+.large-hero__description li {
+        padding: 5px 0px 0px 65px;
+        margin: 50px 140px 0px;
+        font-weight: 400;
+        line-height: 1.5;
+        font-size: 1.5rem
+
+    }
+  }
+
+@media (min-width:1790px){
+
+.large-hero__description li {
+        padding: 5px 0px 0px 65px;
+        margin: 65px 150px 0px;
+        font-weight: 400;
+        line-height: 1.5;
+        font-size: 1.8rem
+
+    }
+  }
+
+.btn {
   /*background-color: $mainBlue;*/
-  color:#000;
+  color: #000;
   border-radius: 15px;
   text-align: center;
-  text-decoration:none;
-  padding:.75rem 1.2rem;
-  display:inline-block;
+  text-decoration: none;
+  padding: .75rem 1.2rem;
+  display: inline-block;
 }
-
-.btn--white{
-    background-color:rgba(255,255,255,0.5);
-  }
-
-.btn--large{
-    padding:1.1rem 4rem;
-  }
 
 @media (min-width:530px){
 
-.btn{
-      font-size:1.25rem
+.btn {
+    font-size: 1.25rem
 }
+  }
+
+.btn--white {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+@media (min-width:1790px){
+
+.btn--large {
+    font-size: 1.75rem;
+    margin: 0px 0px 0px 60px;
+    padding: 1.5rem 8rem
+
+
+  }
+  }
+
+@media (min-width:1600px){
+
+.btn--large {
+    font-size: 1.75rem;
+    margin: 0px 0px 0px 60px;
+    padding: 1.5rem 8rem
+
+
+  }
+  }
+
+@media (min-width:1400px){
+
+.btn--large {
+    font-size: 1.75rem;
+    margin: 0px 0px 0px 60px;
+    padding: 1.5rem 8rem
+
+
+  }
+  }
+
+.btn span {
+    display: block;
   }
 
 .wrapper {
@@ -699,23 +883,39 @@ a{
 
 .wrapper--bg-White {
     background-color: #ffffff;
+    height: 0px;
+  }
+
+@media (min-width:800px){
+
+.wrapper--bg-White {
+      height: 50px
+  }
   }
 
 .wrapper--bg-LightGrey {
     background-color: #f7f7f7;
+      height: 50px;
+  }
+
+@media (min-width:800px){
+
+.wrapper--bg-LightGrey {
+      height: 75px
+  }
   }
 
 .wrapper--bg-Grey {
     background-color: #f7f7f7;
-    padding:15px 20px;
+    padding: 15px 20px;
     text-align: center;
   }
 
-.wrapper--bg-Grey p{
-      font-size:1.5rem;
+.wrapper--bg-Grey p {
+      font-size: 1.5rem;
       line-height: 1.7;
       width: 70%;
-      margin:0 auto;
+      margin: 0 auto;
     }
 
 .wrapper--bg-DarkGrey {
@@ -1269,7 +1469,7 @@ Instead edit gulp/templates/sprite*/
 
 .site-header--logo {
     width: 70%;
-    height:100%;
+    height: 100%;
     display: inline-block;
   }
 
@@ -1277,12 +1477,19 @@ Instead edit gulp/templates/sprite*/
     display: inline-block;
   }
 
-.site-header--logo-img img{
-    position: absolute;
-    top: 0;
-    left: 40px;
-    height: 70px;
+.site-header--logo-img img {
+      position: absolute;
+      top: 0;
+      left: 40px;
+      height: 50px;
     }
+
+@media (min-width:800px){
+
+.site-header--logo-img img {
+        height: 70px
+    }
+  }
 
 .site-header--logo-info {
     display: inline-block;
@@ -1435,42 +1642,40 @@ Instead edit gulp/templates/sprite*/
   }
   }
 
-.site-header__menu-content .list li{
-    display: inline-block;
+.site-header__menu-content .list li {
+      display: inline-block;
       list-style: none;
       display: inline-block;
-      padding-right:7px;
+      padding-right: 7px;
     }
 
-.site-header__menu-content .list li a{
+.site-header__menu-content .list li a {
         font-size: 18px;
-        color:#000;
+        color: #000;
       }
 
 @media (min-width:800px){
 
-.site-header__menu-content .list li{
+.site-header__menu-content .list li {
         padding-right: 45px
     }
   }
 
 @media (min-width:1010px){
 
-.site-header__menu-content .list li{
+.site-header__menu-content .list li {
         padding-right: 90px
     }
   }
 
-.site-header__menu-content li:last-child{
+.site-header__menu-content li:last-child {
       padding-right: 0;
-
     }
 
 @media (min-width:800px){
 
-.site-header__menu-content li:last-child{
+.site-header__menu-content li:last-child {
         padding-right: 45px
-
     }
   }
 

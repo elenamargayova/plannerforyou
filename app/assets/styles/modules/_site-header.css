@@ -19,23 +19,25 @@
   }
   &--logo {
     width: 70%;
-    height:100%;
+    height: 100%;
     display: inline-block;
   }
   &--logo-img {
     display: inline-block;
-    img{
-    position: absolute;
-    top: 0;
-    left: 40px;
-    height: 70px;
+    img {
+      position: absolute;
+      top: 0;
+      left: 40px;
+      height: 50px;
+      @mixin atMedium {
+        height: 70px;
+      }
     }
   }
   &--logo-info {
     display: inline-block;
     margin: 30px 150px;
-
-  .eng {
+    .eng {
       margin-right: 16px;
       font-weight: bold;
       font-family: 'Arial', serif;
@@ -136,33 +138,28 @@
       padding-top: 0;
       transform: scale(1);
     }
-    .list li{
-    display: inline-block;
+    .list li {
+      display: inline-block;
       list-style: none;
       display: inline-block;
-      padding-right:7px;
-      a{
+      padding-right: 7px;
+      a {
         font-size: 18px;
-        color:#000;
+        color: #000;
       }
-      @mixin atMedium{
+      @mixin atMedium {
         padding-right: 45px;
       }
-
-      @mixin atLarge{
+      @mixin atLarge {
         padding-right: 90px;
       }
     }
-    li:last-child{
+    li:last-child {
       padding-right: 0;
-      @mixin atMedium{
+      @mixin atMedium {
         padding-right: 45px;
       }
-
     }
-
-
-
     &--is-visible {
       opacity: 1;
       z-index: 1;

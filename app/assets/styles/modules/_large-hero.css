@@ -1,7 +1,10 @@
 .large-hero {
   overflow: hidden;
   position: relative;
-  padding-top: 125px;
+  padding-top: 0px;
+  @mixin atMedium {
+    padding-top: 125px;
+  }
   &__image {
     display: block;
   }
@@ -30,21 +33,64 @@
     @mixin atLarge {
       width: 40%;
     }
-    p{
-      text-align: center;
+
+    @mixin atXXLarge {
+      height: 100%;
+      padding: 190px 0px 0px 0px;
+      top: 0px;
+      width: 50%;
     }
+
+    @mixin atXXXLarge {
+      height: 100%;
+      padding: 220px 0px 0px 0px;
+      top: 0px;
+      width: 50%;
+    }
+
+    @mixin atXXXXLarge {
+      height: 100%;
+      padding: 220px 0px 0px 0px;
+      top: 0px;
+      width: 50%;
+    }
+
+    p {
+      text-align: center;
+      @mixin atXXXLarge {}
+    }
+
   }
   &__title {
     font-weight: 400;
     color: #000;
     margin: 0;
-    font-size: 2.4rem;
-    @mixin atMedium {
-      font-size: 1.7rem;
-    }
+    font-size: 1.7rem;
     @mixin atSmall {
       font-size: 1.7rem;
     }
+    @mixin atMedium {
+      font-size: 1.8rem;
+    }
+
+    @mixin atXXLarge {
+      font-size: 2.6rem;
+      font-weight: 300;
+      padding: 0px 0px 0px 50px;
+    }
+
+    @mixin atXXXLarge {
+      font-size: 3.1rem;
+      font-weight: 300;
+      padding: 0px 0px 0px 50px;
+    }
+
+    @mixin atXXXXLarge {
+      font-size: 3.5rem;
+      font-weight: 300;
+      padding: 0px 0px 0px 50px;
+    }
+
   }
   &__subtitle {
     font-weight: 300;
@@ -64,6 +110,31 @@
     max-width: 30rem;
     margin-left: auto;
     margin-right: auto;
+
+    @mixin atXXLarge {
+      margin: 85px auto;
+      padding: 0;
+      max-width: 100%;
+    }
+
+    @mixin atXXXLarge {
+      margin: 100px auto;
+      padding: 0;
+      max-width: 100%;
+    }
+    @mixin atXXXXLarge {
+      margin: 100px auto;
+      padding: 0;
+      max-width: 100%;
+    }
+
+    @mixin atMedium {
+      margin-left: 60px;
+      font-size: 2.5rem;
+    }
+    @mixin atSmall {
+      font-size: 1.2rem;
+    }
     li {
       padding: 30px 0px 15px 50px;
       background-image: url(../../assets/images/checker12.png);
@@ -75,13 +146,29 @@
         padding: 5px 0px 0px 65px;
         background-size: 30px;
       }
+      @mixin atXXLarge {
+        padding: 5px 0px 0px 65px;
+        margin: 40px 95px 0px;
+        font-weight: 400;
+        line-height: 1.5;
+        font-size: 1.4rem;
+      }
+      @mixin atXXXLarge {
+        padding: 5px 0px 0px 65px;
+        margin: 50px 140px 0px;
+        font-weight: 400;
+        line-height: 1.5;
+        font-size: 1.5rem;
+      }
+      @mixin atXXXXLarge {
+        padding: 5px 0px 0px 65px;
+        margin: 65px 150px 0px;
+        font-weight: 400;
+        line-height: 1.5;
+        font-size: 1.8rem;
+      }
+
     }
-    @mixin atMedium {
-      margin-left: 60px;
-      font-size: 2.5rem;
-    }
-    @mixin atSmall {
-      font-size: 1.2rem;
-    }
+
   }
 }

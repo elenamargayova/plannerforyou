@@ -45,22 +45,29 @@
   }
   &--bg-White {
     background-color: $mainWhite;
+    height: 0px;
+    @mixin atMedium {
+      height: 50px;
+    }
   }
   &--bg-LightGrey {
     background-color: $LightGrey;
+      height: 50px;
+    @mixin atMedium {
+      height: 75px;
+    }
   }
   &--bg-Grey {
     background-color: #f7f7f7;
-    padding:15px 20px;
+    padding: 15px 20px;
     text-align: center;
-    p{
-      font-size:1.5rem;
+    p {
+      font-size: 1.5rem;
       line-height: 1.7;
       width: 70%;
-      margin:0 auto;
+      margin: 0 auto;
     }
   }
-
   &--bg-DarkGrey {
     padding: 5px;
     background-color: #969696;
