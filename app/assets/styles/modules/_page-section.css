@@ -1,42 +1,63 @@
-.page-section{
+.page-section {
   /*padding: 1.2rem 0;*/
-
-@mixin atMedium{
-  /*padding: 4.5rem 0;*/
-}
-&__paragraph-center{
-  padding: 15px 0px;
-  text-align: center;
-  width:70%;
-  line-height: 1.4;
-  font-size: 1.725rem;
-  margin:0 auto;
-}
-&--no-b-padding-until-medium{
-  padding-bottom: 0;
-
-  @mixin atMedium{
-    padding-bottom: 4.5rem;
+  @mixin atMedium {
+    /*padding: 4.5rem 0;*/
   }
-}
-
-&--no-b-padding-until-large{
-  padding-bottom: 0;
-
-  @mixin atLarge{
-    padding-bottom: 4.5rem;
+  &__paragraph-center {
+    padding: 15px 0px;
+    text-align: center;
+    width: 70%;
+    line-height: 1.4;
+    font-size: 1.725rem;
+    margin: 0 auto;
+    @mixin atSmallest {
+      padding: 15px 0px;
+      text-align: center;
+      width: 100%;
+      line-height: 1.2;
+      font-size: 3.8vmin;
+      margin: 0 auto;
+    }
+    @mixin atSmaller {}
+    @mixin atSmall {}
+    @mixin atMedium {
+      width: 81%;
+      font-size: 2.6vmin;
+    }
+    @mixin atLarge {
+      width: 83%;
+      font-size: 3vmin;
+      line-height: 1.4;
+    }
+    @mixin atLarger {
+      width: 76%;
+    }
+    @mixin atXLarge {
+      width: 62%;
+    }
+    @mixin atXXLarge {
+      width: 58%;
+    }
   }
-}
-
-
-&--testimonials{
-  background-color: #e0e6ef;
-  @mixin atLarge{
-  &.lazyloaded{
-    background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
-    background-size:cover;
+  &--no-b-padding-until-medium {
+    padding-bottom: 0;
+    @mixin atMedium {
+      padding-bottom: 4.5rem;
+    }
   }
+  &--no-b-padding-until-large {
+    padding-bottom: 0;
+    @mixin atLarge {
+      padding-bottom: 4.5rem;
+    }
   }
-}
-
+  &--testimonials {
+    background-color: #e0e6ef;
+    @mixin atLarge {
+      &.lazyloaded {
+        background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
+        background-size: cover;
+      }
+    }
+  }
 }
