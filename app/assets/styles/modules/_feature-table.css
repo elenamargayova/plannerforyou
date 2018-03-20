@@ -1,91 +1,99 @@
-.features{
+.features {
   overflow: hidden;
   position: relative;
-
-&__image{
-  display: block;
+  &__image {
+    display: block;
+  }
+  &__text-content {
+    padding-top: 15vmin;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    text-align: left;
+    @mixin atLarger {
+      padding-top: 10vmin;
+    }
+    @mixin atXXLarge {
+      padding-top: 60px;
+    }
+  }
+  &__title {
+    font-weight: 300;
+    color: $mainBlue;
+    margin: 0;
+    font-size: 2.4rem;
+    @mixin atSmall {
+      font-size: 4.8rem;
+    }
+  }
+  &__subtitle {
+    font-weight: 300;
+    color: $mainBlue;
+    font-size: 1.5rem;
+    margin: 0;
+    @mixin atSmall {
+      font-size: 2.9rem;
+    }
+  }
+  &__description {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 100;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    @mixin atSmall {
+      font-size: 1.875rem;
+    }
+  }
 }
-
-&__text-content{
-  padding-top:88px;
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  left:0;
-  width:100%;
-  text-align: left;
-
-@mixin atMedium{
-  padding-top:60px;
-}
-
-}
-&__title{
-  font-weight:300;
-  color: $mainBlue;
-  margin:0;
-  font-size: 2.4rem;
-
-@mixin atSmall{
-  font-size:4.8rem;
-}
-
-}
-&__subtitle{
-  font-weight: 300;
-  color: $mainBlue;
-  font-size: 1.5rem;
-  margin:0;
-
-@mixin atSmall{
-  font-size: 2.9rem;
-}
-
-}
-&__description{
-  color:#fff;
-  font-size: 1.1rem;
-  font-weight: 100;
-  text-shadow:2px 2px 0 rgba(0,0,0,.1);
-  max-width:30rem;
-  margin-left:auto;
-  margin-right:auto;
-
-@mixin atSmall{
-  font-size: 1.875rem;
-}
-
-}
-}
-
-
-
 
 .feature-table {
   border-radius: 25px;
   border-collapse: collapse;
   background-color: rgba(#f1f1f1, 0.5);
   tr {
-    height: 100px;
-    font-size: 1.3rem;
-    line-height: 2;
+    line-height: 1.5;
+    font-size: 2.9vmin;
+    vertical-align: top;
+    @mixin atXLarge {
+      line-height: 1.5;
+      font-size: 2.9vmin;
+    }
+    @mixin atXXLarge {
+      line-height: 1.5;
+      font-size: 2.8vmin;
+    }
   }
-  th{
+  td {
+    padding: 20px 15px 20px 20px;
+    @mixin atXXLarge {
+      padding: 35px 15px 35px 20px;
+    }
+  }
+  th {
     font-size: 2rem;
     font-weight: 400;
     text-align: center;
+    width: 50%;
+    padding: 20px 0px;
+    @mixin atXXLarge {
+      padding: 35px 0px;
+    }
   }
-  th,td{
-    padding: 15px;
+  th, tr {
+    border-bottom: 8px solid rgba(255, 255, 255, 0.6);
   }
-  th,tr{
-      border-bottom: 8px solid rgba(255,255,255,0.6);
-  }
-  tr:last-child{
+  tr:last-child {
     border: none;
   }
-  th:first-child,td:first-child{
-    border-right: 8px solid rgba(255,255,255,0.6);
+  th:first-child, td:first-child {
+    border-right: 8px solid rgba(255, 255, 255, 0.6);
   }
-
+  th:nth-child(2), td:nth-child(2) {
+    border-left: 8px solid rgba(255, 255, 255, 0.6);
+  }
 }
