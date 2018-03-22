@@ -14,16 +14,13 @@
       padding: 15px 0px;
       text-align: center;
       width: 100%;
+      font-size: 2.6vmin;
       line-height: 1.2;
-      font-size: 3.8vmin;
       margin: 0 auto;
     }
     @mixin atSmaller {}
     @mixin atSmall {}
-    @mixin atMedium {
-      width: 81%;
-      font-size: 2.6vmin;
-    }
+    @mixin atMedium {}
     @mixin atLarge {
       width: 83%;
       font-size: 3vmin;
