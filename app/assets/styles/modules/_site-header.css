@@ -26,10 +26,20 @@
     display: inline-block;
     img {
       position: absolute;
-      top: 0;
-      left: 40px;
-      height: 50px;
+      top: 5px;
+      left: 5px;
+      height: 40px;
+      @mixin atSmall {
+        top: 5px;
+        left: 10px;
+        height: 45px;
+      }
       @mixin atMedium {
+        left: 20px;
+        height: 70px;
+      }
+      @mixin atLarge {
+        left: 40px;
         height: 70px;
       }
     }

@@ -17,7 +17,7 @@
   }
 
   &--gutters>div {
-    padding-right: 65px;
+    /*padding-right: 65px;*/
   }
 
   &--gutters-large>div {
@@ -81,25 +81,16 @@
 }
 /*begin equal height rules*/
 .flexbox &--equal-height-at-medium{
-  @mixin atMedium{
-  display: flex;
-  }
-&>div{
-  float: none;
-  display: flex;
-}
-}
-.flexbox &--equal-height-at-large{
-  @mixin atLarge{
+  @mixin atSmaller{
   display: flex;
 
   }
 &>div{
   float: none;
   display: flex;
+  margin: 0 auto;
+}
 }
 
-
-}
 
 }
