@@ -492,7 +492,7 @@ a{
 
   }
 
-@media (min-width: 320px) {
+@media (min-width: 220px) {
 
 .large-hero__image {
       opacity: 0.6
@@ -518,7 +518,7 @@ a{
     text-align: left;
   }
 
-@media (min-width: 320px) {
+@media (min-width: 220px) {
 
 .large-hero__text-content {
       top: 0;
@@ -600,7 +600,7 @@ a{
     font-size: 1.7rem;
   }
 
-@media (min-width: 320px) {
+@media (min-width: 220px) {
 
 .large-hero__title {
       font-size: 5.2vmin;
@@ -691,7 +691,7 @@ a{
     margin-right: auto;
   }
 
-@media (min-width: 320px) {
+@media (min-width: 220px) {
 
 .large-hero__description {
       font-size: 3.6vmin;
@@ -763,7 +763,7 @@ a{
     background-size: 40px;
   }
 
-@media (min-width: 320px) {
+@media (min-width: 220px) {
 
 .large-hero__description li {
       padding: 2vmin 0vmin 2vmin 10vmin;
@@ -875,7 +875,7 @@ a{
     background-color: rgba(255, 255, 255, 0.5);
   }
 
-@media (min-width: 320px) {
+@media (min-width: 220px) {
 
 .btn--large {
       font-size: 3.5vmin;
@@ -1058,14 +1058,7 @@ a{
 
 .wrapper--bg-White-Large {
     background-color: #ffffff;
-    height: 0px;
-  }
-
-@media (min-width: 800px) {
-
-.wrapper--bg-White-Large {
-      height: 100px
-  }
+    height: 100px;
   }
 
 .wrapper--bg-LightGrey {
@@ -1089,6 +1082,7 @@ a{
 .wrapper--bg-DarkGrey {
     padding: 5px;
     background-color: #969696;
+    text-align: center;
   }
 
 /*padding: 1.2rem 0;*/
@@ -1109,7 +1103,7 @@ a{
     margin: 0 auto;
   }
 
-@media (min-width: 320px) {
+@media (min-width: 220px) {
 
 .page-section__paragraph-center {
       padding: 15px 0px;
@@ -1256,9 +1250,9 @@ a{
     display: table;
   }
 
-.row--t-padding{
-  padding-top: 80px;
-}
+.row--t-padding {
+    padding-top: 80px;
+  }
 
 .row--gutters {
     margin-right: -65px;
@@ -1268,7 +1262,7 @@ a{
     margin-right: -100px;
   }
 
-.row--gutters-small{
+.row--gutters-small {
     margin-right: -45px;
   }
 
@@ -1340,20 +1334,119 @@ a{
 
 @media (min-width: 525px) {
 
-.flexbox .row--equal-height-at-medium{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex
-}
+.flexbox .row--equal-height-at-medium {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex
+  }
   }
 
-.flexbox .row--equal-height-at-medium>div{
-  float: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-}
+@media (min-width: 640px) {
+
+.flexbox .row--equal-height-at-medium {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width:80%;
+      margin: 0 auto
+  }
+  }
+
+@media (min-width: 800px) {
+
+.flexbox .row--equal-height-at-medium {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 85%;
+      margin: 0 auto
+  }
+  }
+
+@media (min-width: 1010px) {
+
+.flexbox .row--equal-height-at-medium {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 85%;
+      margin: 0 auto
+  }
+  }
+
+@media (min-width: 1100px) {
+
+.flexbox .row--equal-height-at-medium {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 80%;
+      margin: 0 auto
+  }
+  }
+
+@media (min-width: 1200px) {
+
+.flexbox .row--equal-height-at-medium {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 70%;
+      margin: 0 auto
+  }
+  }
+
+@media (min-width: 1200px) {
+
+.flexbox .row--equal-height-at-medium {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 65%;
+      margin: 0 auto
+  }
+  }
+
+@media (min-width: 1400px) {
+
+.flexbox .row--equal-height-at-medium {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 60%;
+      margin: 0 auto
+  }
+  }
+
+@media (min-width: 1600px) {
+
+.flexbox .row--equal-height-at-medium {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 50%;
+      margin: 0 auto
+  }
+  }
+
+@media (min-width: 1790px) {
+
+.flexbox .row--equal-height-at-medium {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 40%;
+      margin: 0 auto
+  }
+  }
+
+.flexbox .row--equal-height-at-medium>div {
+      float: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0 auto;
+    }
 
 .generic-content-container p{
     font-weight: 300;
@@ -1383,6 +1476,23 @@ a{
 }
 
 @media (min-width: 640px) {
+
+.section-title{
+    font-size: 1.75rem
+
+}
+  }
+
+@media (min-width: 800px) {
+
+.section-title{
+    font-size: 2rem;
+    margin: 20px 10px 40px 10px
+
+}
+  }
+
+@media (min-width: 1010px) {
 
 .section-title{
   font-size: 2.75rem
@@ -1495,6 +1605,27 @@ a{
 .testimonial--list li {
     font-size: 0.7rem;
     margin-bottom: 5px;
+  }
+
+@media (min-width: 640px) {
+
+.testimonial--list li {
+    font-size: 0.9rem
+  }
+  }
+
+@media (min-width: 800px) {
+
+.testimonial--list li {
+  font-size: 1rem
+  }
+  }
+
+@media (min-width: 800px) {
+
+.testimonial--list li {
+font-size: 1.2rem
+  }
   }
 
 .testimonial__photo {
@@ -1616,41 +1747,79 @@ Instead edit gulp/templates/sprite*/
 .site-footer{
   /*background-color: $mainBlue;*/
   color:#000;
-  /*padding:.5rem 0;*/
-  text-align: center;
 }
+
+/*padding:.5rem 0;*/
 
 .site-footer__logo{
    height:55px;
    width: auto;
+
  }
 
 .site-footer__text{
     display:block;
-    margin-bottom: 1rem;
+    margin-bottom:2px;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
+
   }
 
-@media (min-width: 800px) {
+@media (min-width: 525px) {
 
 .site-footer__text{
   display: block;
   margin-bottom:5px;
-  margin-right: 1.4rem
+  margin-right: 1.4rem;
+  font-size: 1.2rem
+
   }
   }
 
 .site-footer__contacts{
-    display:inline-block;
-    margin: 30px 50px;
-    vertical-align: top
+    display: inline-block;
+    margin: 30px 0px;
+    vertical-align: top;
+    width: 40%;
+    text-align: center;
+
+  }
+
+@media (min-width: 525px) {
+
+.site-footer__contacts{
+  width: 45%
+
+  }
+  }
+
+@media (min-width: 640px) {
+
+.site-footer__contacts{
+  width: 50%
+
+  }
   }
 
 .site-footer .social-icons{
   display: inline-block;
-  margin: 25px 50px;
+  margin: 25px 0px;
+  width: 58%;
 }
+
+@media (min-width: 525px) {
+
+.site-footer .social-icons{
+  width: 45%
+}
+  }
+
+@media (min-width: 640px) {
+
+.site-footer .social-icons{
+  width: 49%
+}
+  }
 
 .site-header {
   position: absolute;
@@ -1725,7 +1894,28 @@ Instead edit gulp/templates/sprite*/
 
 .site-header--logo-info {
     display: inline-block;
-    margin: 30px 150px;
+  margin: 15px 0px 0px 100px;
+  }
+
+@media (min-width: 640px) {
+
+.site-header--logo-info {
+      margin: 15px 0px 0px 100px
+  }
+  }
+
+@media (min-width: 800px) {
+
+.site-header--logo-info {
+      margin: 30px 0px 0px 150px
+  }
+  }
+
+@media (min-width: 1010px) {
+
+.site-header--logo-info {
+      margin: 30px 150px
+  }
   }
 
 .site-header--logo-info .eng {
@@ -2127,17 +2317,15 @@ padding-top: 10px;
     background-color: #4e4e4d;
     border-radius: 10px;
     display: inline-block;
-    margin:0 5px 5px 5px;
-    margin:0 5px;
-    width:33%;
+    margin:0 2px;
     height:50px;
+    width:50px;
     position: relative;
   }
 
-@media (min-width: 640px) {
+@media (min-width: 525px) {
 
 .social-icons__icon{
-      width:50px;
       margin:0 5px
   }
   }
@@ -2425,3 +2613,59 @@ padding-top: 10px;
       border-left: 8px solid rgba(255, 255, 255, 0.6)
   }
   }
+
+*{
+  outline:none;
+}
+
+form{
+  float:left;
+  width:100%;
+  margin: 20px;
+}
+
+form>div{
+  float:left;
+  width:50%;
+}
+
+form>div>input{
+  border-radius: 10px;
+  border:1px solid #c4c4c4;
+  font-size: 0.8em;
+  padding:10px 5%;
+  margin-bottom:10px;
+  background-color: #fff;
+  width:76%;
+}
+
+form>div>input:focus,form textarea:focus{
+  /*border-color:#adadad;*/
+  border:2px solid #adadad;
+}
+
+form textarea{
+  border-radius: 5px;
+border: 1px solid #c4c4c4;
+font-size: 0.8em;
+padding: 10px;
+background-color: #fff;
+width: 85%;
+resize: vertical;
+max-height: 200px;
+min-height: 127px;
+}
+
+form .btn__send{
+  border-radius: 5px;
+  padding: 5px 15px;
+  border: 0;
+  cursor: pointer;
+  background-color: #d59541;
+  color: #fff;
+  margin: 10px 0px;
+}
+
+form .btn:hover{
+  border-bottom-color:#1999d1;
+}

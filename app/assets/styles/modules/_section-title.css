@@ -3,7 +3,14 @@
   font-weight: 300;
   text-align: center;
   margin: 15px 10px;
-@mixin atSmall{
+  @mixin atSmall{
+    font-size: 1.75rem;
+  }
+  @mixin atMedium{
+    font-size: 2rem;
+    margin: 20px 10px 40px 10px;
+  }
+@mixin atLarge{
   font-size: 2.75rem;
 }
 

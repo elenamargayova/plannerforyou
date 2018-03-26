@@ -65,10 +65,7 @@
   }
   &--bg-White-Large {
     background-color: $mainWhite;
-    height: 0px;
-    @mixin atMedium {
-      height: 100px;
-    }
+    height: 100px;
   }
 
 
@@ -87,5 +84,6 @@
   &--bg-DarkGrey {
     padding: 5px;
     background-color: #969696;
+    text-align: center;
   }
 }

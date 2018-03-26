@@ -21,7 +21,7 @@
     <div class="wrapper wrapper--bg-LightGrey">
       <div class="site-header--logo">
         <div class="site-header--logo-img"><img src="assets/images/cover7.png"></div>
-        <!--<div class="site-header--logo-info"><span class="eng">Wedding Diary</span><span class="rus">Ежедневник невесты</span></div>-->
+        <div class="site-header--logo-info"><span class="eng">Wedding Diary</span><span class="rus">Ежедневник невесты</span></div>
       </div>
 
       <div class="site-header__menu-icon">
@@ -35,18 +35,18 @@
     <div class="wrapper wrapper--bg-White">
       <div class="site-header__menu-content ">
         <ul class="list">
-          <li><a href="#our-beginning" id="our-beginning-link">Главная</a></li>
-          <li><a href="#features" id="features-link">Содержание</a></li>
-          <li><a href="#testimonials" id="testimonials-link">Преимущества</a></li>
-          <li><a href="#testimonials" id="testimonials-link">Упаковка</a></li>
-          <li><a href="#testimonials" id="testimonials-link">Контакты</a></li>
+          <li><a href="#large-hero" id="our-beginning-link">Главная</a></li>
+          <li><a href="#testimonialss" id="features-link">Содержание</a></li>
+          <li><a href="#features" id="testimonials-link">Преимущества</a></li>
+          <li><a href="#box" id="testimonials-link">Упаковка</a></li>
+          <li><a href="#contacts" id="testimonials-link">Контакты</a></li>
           <!--<div class="primary-nav--contacts"></div>-->
         </ul>
       </div>
     </div>
   </header>
 
-  <div class="large-hero">
+  <div id="large-hero" class="large-hero">
     <picture>
       <source srcset="assets/images/peonies-notepad--large.jpg 1920w, assets/images/peonies-notepad--large-hi-dpi.jpg 3840w" media="(min-width:1380px)">
       <source srcset="assets/images/peonies-notepad--medium.jpg 1380w, assets/images/peonies-notepad--medium-hi-dpi.jpg 2760w" media="(min-width:990px)">
@@ -63,6 +63,7 @@
           <li>2 варианта ежедневника на выбор для любого бюджета</li>
         </ul>
         <p><a href="#" class="btn btn--white btn--large open-modal">Заказать<span>Ежедневник Невесты</span></a></p>
+          <p><a href="callback.php">Заказать<span>Ежедневник Невесты</span></a></p>
       </div>
     </div>
   </div>
@@ -117,8 +118,8 @@
   </div>
 
   <div id="testimonials" class="page-section page-section--no-b-padding-until-medium page-section--testimonials lazyload" data-matching-link="#testimonials-link">
-    <div class="wrapper wrapper--no-padding-until-medium">
-      <h2 class="section-title section-title--black">
+    <div id="testimonialss" class="wrapper wrapper--no-padding-until-medium">
+      <h2   class="section-title section-title--black">
           <!--<span class="icon icon--comment section-title__icon"></span>-->
     Из чего состоит ежедневник:</h2>
       <div class="row row--equal-height-at-medium generic-content-container">
@@ -162,19 +163,19 @@
       </div>
     </div>
   </div>
-  <div class="wrapper wrapper--bg-Grey">
+  <div id="box" class="wrapper wrapper--bg-Grey">
     <p  class="page-section__paragraph-center">
       Упаковка так же в нескольких вариантах на ваш выбор: прозрачный пакет с клеевым клапаном, крафт пакет с бумагой либо коробка с прозрачным окном.
     </p>
   </div>
   <footer class="site-footer">
     <div class="wrapper wrapper--bg-White-Large">
-      <p class="site-footer__contacts"><span class="site-footer__text">+375 29 768 78 64</span>
+      <p id="contacts" class="site-footer__contacts"><span class="site-footer__text">+375 29 768 78 64</span>
         <span class="site-footer__text">dusha.2018@tut.by</span></p>
       <div class="social-icons">
         <a href="#" class="social-icons__icon">
         <span class="icon icon--facebook"></span></a>
-        <a href="#" class="social-icons__icon">
+        <a href="https://www.instagram.com/planner.for.you/" class="social-icons__icon">
             <span class="icon icon--instagram"></span></a>
         <a href="#" class="social-icons__icon">
               <span class="icon icon--vk"></span></a>
@@ -190,19 +191,30 @@
     <div class="modal__inner">
       <h2 class="section-title section-title--blue section-title--less-margin">
     <span class="icon icon--mail section-title__icon"></span>
-Get in <strong>Touch</strong></h2>
+<strong>Оформить заказ</strong></h2>
       <div class="wrapper wrapper--narrow">
-        <p class="modal__description">We will have an online system soon. Until then,connect with us on any of the platforms below!</p>
+        <p class="modal__description">Чтобы заказать Ежедневник Невесты, заполните форму и отправьте нам или пишите нам в социальных сетях!</p>
+        <form>
+          <div>
+            <input type="text" id="name" placeholder="Ваше имя">
+            <br>
+            <input type="email" id="email" placeholder="Email">
+            <br>
+            <input type="tel" id="tel" placeholder="Номер телефона">
+          </div>
+          <div>
+            <textarea id="message" placeholder="Введите сообщение"></textarea>
+          </div>
+          <input type="button" id="send" class="btn__send" value="Отправить">
+        </form>
       </div>
       <div class="social-icons">
         <a href="#" class="social-icons__icon">
       <span class="icon icon--facebook"></span></a>
-        <a href="#" class="social-icons__icon">
-        <span class="icon icon--twitter"></span></a>
-        <a href="#" class="social-icons__icon">
+        <a href="https://www.instagram.com/planner.for.you/" class="social-icons__icon">
           <span class="icon icon--instagram"></span></a>
         <a href="#" class="social-icons__icon">
-            <span class="icon icon--youtube"></span></a>
+            <span class="icon icon--vk"></span></a>
       </div>
     </div>
     <div class="modal__close">X</div>
