@@ -25,6 +25,9 @@
       width: 50%;
     }
     @mixin atMedium {
+      width: 75%;
+    }
+    @mixin atLarge {
       width: 70%;
     }
     @mixin atLarger {
@@ -223,7 +226,13 @@
       display: inline-block;
       span {
         font-weight: bolder;
-        /*margin-right: 25px;*/
+        display: block;
+        margin:15px 0px 5px 0px;
+        @mixin atLarger{
+          display: inline-block;
+        margin-right: 25px;
+      }
+
       }
       a {
         color: #000;
