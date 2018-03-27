@@ -1851,9 +1851,30 @@ Instead edit gulp/templates/sprite*/
   }
 
 .site-header--logo {
-    width: 70%;
+    width: 85%;
     height: 100%;
     display: inline-block;
+  }
+
+@media (min-width: 525px) {
+
+.site-header--logo {
+      width: 50%
+  }
+  }
+
+@media (min-width: 800px) {
+
+.site-header--logo {
+      width: 70%
+  }
+  }
+
+@media (min-width: 1100px) {
+
+.site-header--logo {
+      width: 65%
+  }
   }
 
 .site-header--logo-img {
@@ -1894,13 +1915,20 @@ Instead edit gulp/templates/sprite*/
 
 .site-header--logo-info {
     display: inline-block;
-  margin: 15px 0px 0px 100px;
+    margin: 8px 0px 0px 80px;
+  }
+
+@media (min-width: 525px) {
+
+.site-header--logo-info {
+      margin: 8px 0px 0px 80px
+  }
   }
 
 @media (min-width: 640px) {
 
 .site-header--logo-info {
-      margin: 15px 0px 0px 100px
+      margin: 8px 0px 0px 100px
   }
   }
 
@@ -1922,13 +1950,35 @@ Instead edit gulp/templates/sprite*/
       margin-right: 16px;
       font-weight: bold;
       font-family: 'Arial', serif;
-      font-size: 20px;
+      font-size: 18px;
+      display: block;
     }
+
+@media (min-width: 800px) {
+
+.site-header--logo-info .eng {
+        display: inline-block;
+        margin-right: 16px;
+        font-weight: bold;
+        font-family: 'Arial', serif;
+        font-size: 18px
+    }
+  }
 
 .site-header--logo-info .rus {
       font-family: Arial, serif;
-      font-size: 18px;
+      font-size: 16px;
+      display: block;
     }
+
+@media (min-width: 800px) {
+
+.site-header--logo-info .rus {
+        display: inline-block;
+        font-family: Arial, serif;
+        font-size: 18px
+    }
+  }
 
 .site-header__logo {
     position: absolute;
@@ -2133,12 +2183,26 @@ Instead edit gulp/templates/sprite*/
   }
       .site-header__contacts-content span {
         font-weight: bolder;
-        margin-right: 25px;
+        /*margin-right: 25px;*/
       }
       .site-header__contacts-content a {
         color: #000;
         font-size: 18px;
       }
+  }
+
+@media (min-width: 1010px) {
+
+.site-header__contacts-content {
+      width:28%
+  }
+  }
+
+@media (min-width: 1100px) {
+
+.site-header__contacts-content {
+      width:33%
+  }
   }
 
 .site-header__contacts-content--is-visible {
